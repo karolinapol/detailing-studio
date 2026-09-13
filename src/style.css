@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand palette — lifted 1:1 from the Figma handoff tokens */
+  --color-ink: #0a0a0d;       /* page background */
+  --color-surface: #16171c;    /* card background */
+  --color-line: #2a2b31;       /* borders/dividers */
+  --color-paper: #f5f5f7;      /* primary text on dark */
+  --color-muted: #9ca3af;      /* secondary text */
+  --color-dim: #6b7280;        /* tertiary / eyebrow text */
+  --color-accent: #3b82f6;     /* primary accent */
+  --color-accent-light: #60a5fa; /* accent hover */
+  --color-danger: #ef4444;     /* form error */
+  --color-success: #22c55e;    /* form success */
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+    font-family: var(--font-sans);
+  }
+
+  /* Keyboard-focus ring, consistent with the input focus state in the design */
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center h-12 px-6 rounded-lg bg-accent text-paper font-semibold text-base transition-colors hover:bg-accent-light hover:text-ink;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center h-12 px-6 rounded-lg border-[1.5px] border-paper text-paper font-semibold text-base transition-colors hover:bg-paper/10;
+  }
+
+  .btn-outline-accent {
+    @apply inline-flex items-center justify-center h-12 px-6 rounded-lg border-[1.5px] border-accent text-accent font-semibold text-base transition-colors hover:bg-accent/10 hover:text-accent-light hover:border-accent-light;
+  }
+
+  .field-label {
+    @apply block text-sm font-medium text-paper mb-2;
+  }
+
+  .field-input {
+    @apply w-full h-12 px-4 rounded-lg bg-ink border border-line text-paper text-base placeholder:text-dim transition-shadow;
+  }
+
+  .field-input:focus-visible {
+    @apply outline-none border-accent ring-4 ring-accent/35;
+  }
+
+  .field-input[aria-invalid="true"] {
+    @apply border-danger ring-4 ring-danger/25;
+  }
+
+  .field-error {
+    @apply hidden items-center gap-1.5 text-danger text-sm mt-2;
+  }
+
+  .field-error.is-visible {
+    @apply flex;
+  }
+
+  .card {
+    @apply bg-surface border border-line rounded-2xl p-6 lg:p-8;
+  }
+
+  .badge {
+    @apply inline-flex items-center h-fit bg-accent/15 text-accent-light rounded-full px-3 py-1 text-sm font-semibold;
+  }
+
+  .site-header {
+    @apply bg-ink/60 backdrop-blur-sm transition-[background-color,backdrop-filter,border-color,box-shadow] duration-300 border-b border-transparent;
+  }
+
+  .site-header.is-scrolled {
+    @apply bg-ink/75 backdrop-blur-md border-line shadow-lg shadow-black/30;
+  }
+
+  .menu-icon-bars {
+    @apply flex flex-col items-center justify-center gap-[5px] w-full h-full;
+  }
+
+  .menu-icon-bars span {
+    @apply block w-[22px] h-[2px] bg-paper transition-transform duration-200;
+  }
+
+  [data-menu-toggle][aria-expanded="true"] .menu-icon-bars span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  [data-menu-toggle][aria-expanded="true"] .menu-icon-bars span:nth-child(2) {
+    opacity: 0;
+  }
+
+  [data-menu-toggle][aria-expanded="true"] .menu-icon-bars span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}

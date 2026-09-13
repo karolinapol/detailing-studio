@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detailing Studio — Mobile Car Detailing &amp; Ceramic Coating</title>
+  <meta name="description" content="Premium mobile car detailing in Gdańsk. Ceramic coating, paint correction and full interior/exterior detailing — we come to you." />
+  <meta name="theme-color" content="#0a0a0d" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230a0a0d'/%3E%3Ccircle cx='12' cy='12' r='6' fill='%233b82f6'/%3E%3C/svg%3E" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="bg-ink text-paper antialiased">
+
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-accent focus:text-paper focus:px-4 focus:py-2 focus:rounded-lg">Skip to content</a>
+
+  <!-- ========== HEADER ========== -->
+  <header data-site-header class="site-header fixed inset-x-0 top-0 z-50">
+    <div class="mx-auto max-w-7xl flex items-center justify-between px-6 py-4 lg:px-16 lg:py-6">
+      <a href="#home" class="text-base lg:text-xl font-extrabold tracking-tight whitespace-nowrap">
+        DETAILING STUDIO<span class="text-accent">.</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+        <a href="#home" class="text-base font-medium text-paper">Home</a>
+        <a href="#services" class="text-base font-medium text-muted hover:text-paper transition-colors">Services</a>
+        <a href="#gallery" class="text-base font-medium text-muted hover:text-paper transition-colors">Gallery</a>
+        <a href="#pricing" class="text-base font-medium text-muted hover:text-paper transition-colors">Pricing</a>
+        <a href="#testimonials" class="text-base font-medium text-muted hover:text-paper transition-colors">Testimonials</a>
+        <a href="#contact" class="text-base font-medium text-muted hover:text-paper transition-colors">Contact</a>
+        <a href="#contact" class="btn-primary h-11 px-6">Book Now</a>
+      </nav>
+
+      <button
+        type="button"
+        data-menu-toggle
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Toggle navigation menu"
+        class="lg:hidden relative flex h-11 w-11 items-center justify-center"
+      >
+        <span class="menu-icon-bars">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== MOBILE MENU PANEL ========== -->
+  <div
+    id="mobile-menu"
+    data-menu-panel
+    class="hidden lg:hidden fixed inset-0 z-40 flex flex-col bg-ink"
+  >
+    <div class="h-[72px]"></div>
+    <nav class="flex-1 flex flex-col justify-center items-start gap-8 px-8" aria-label="Mobile">
+      <a href="#home" class="text-2xl font-bold text-paper">Home</a>
+      <a href="#services" class="text-2xl font-bold text-paper">Services</a>
+      <a href="#gallery" class="text-2xl font-bold text-paper">Gallery</a>
+      <a href="#pricing" class="text-2xl font-bold text-paper">Pricing</a>
+      <a href="#testimonials" class="text-2xl font-bold text-paper">Testimonials</a>
+      <a href="#contact" class="text-2xl font-bold text-paper">Contact</a>
+    </nav>
+    <div class="p-6">
+      <a href="#contact" class="btn-primary w-full">Book Now</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ========== HERO ========== -->
+    <section id="home" class="relative min-h-[600px] lg:min-h-[680px] flex items-end lg:items-center overflow-hidden scroll-mt-20">
+      <img
+        src="/images/hero.webp"
+        alt="A detailer carefully applying paint protection film to a car's headlight, water beading on the glossy bodywork"
+        class="absolute inset-0 w-full h-full object-cover"
+        width="1920"
+        height="1280"
+        fetchpriority="high"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/75 to-ink/55 lg:bg-gradient-to-r lg:from-ink/95 lg:via-ink/60 lg:to-ink/15"></div>
+
+      <div class="relative w-full px-6 py-16 lg:px-16 lg:py-0">
+        <div class="flex flex-col gap-4 lg:gap-6 lg:max-w-xl">
+          <h1 class="text-4xl lg:text-6xl font-extrabold leading-tight lg:leading-[1.05] tracking-tight">
+            Detailing that looks factory-fresh, every time.
+          </h1>
+          <p class="text-base lg:text-lg text-muted leading-relaxed lg:max-w-md">
+            Mobile ceramic coating, paint correction and full interior/exterior detailing —
+            we come to you, anywhere in the Tricity area.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 lg:gap-4 mt-2">
+            <a href="#contact" class="btn-primary">Book Now</a>
+            <a href="#services" class="btn-outline">View Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="px-6 py-16 lg:px-16 lg:py-24 scroll-mt-20">
+      <div class="mx-auto max-w-7xl">
+        <h2 class="text-3xl lg:text-5xl font-extrabold mb-2 lg:mb-3">Our Services</h2>
+        <p class="text-base lg:text-lg text-muted mb-8 lg:mb-12">Professional care for every inch of your vehicle.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+
+          <article class="card">
+            <div class="w-10 h-10 lg:w-12 lg:h-12 rounded-[10px] bg-accent/15 flex items-center justify-center mb-4 lg:mb-6" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" class="w-5 h-5 lg:w-6 lg:h-6 text-accent" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.5c-3.3 4.2-6.5 8.9-6.5 12.3a6.5 6.5 0 0 0 13 0c0-3.4-3.2-8.1-6.5-12.3Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg lg:text-2xl font-bold mb-2 lg:mb-3">Exterior Detailing</h3>
+            <p class="text-sm lg:text-base text-muted leading-relaxed mb-4 lg:mb-6">Hand wash, clay bar decontamination, machine polish and sealant protection.</p>
+            <p class="text-sm lg:text-base text-accent font-semibold">from 349 zł</p>
+          </article>
+
+          <article class="card">
+            <div class="w-10 h-10 lg:w-12 lg:h-12 rounded-[10px] bg-accent/15 flex items-center justify-center mb-4 lg:mb-6" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" class="w-5 h-5 lg:w-6 lg:h-6 text-accent" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2 14 9 21 11 14 13 12 21 10 13 3 11 10 9Z" />
+              </svg>
+            </div>
+            <h3 class="text-lg lg:text-2xl font-bold mb-2 lg:mb-3">Interior Detailing</h3>
+            <p class="text-sm lg:text-base text-muted leading-relaxed mb-4 lg:mb-6">Deep vacuum, steam cleaning, leather conditioning and odor removal.</p>
+            <p class="text-sm lg:text-base text-accent font-semibold">from 399 zł</p>
+          </article>
+
+          <article class="card">
+            <div class="w-10 h-10 lg:w-12 lg:h-12 rounded-[10px] bg-accent/15 flex items-center justify-center mb-4 lg:mb-6" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" class="w-5 h-5 lg:w-6 lg:h-6 text-accent" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2 19 5.5v5c0 4.5-3 8-7 9.5-4-1.5-7-5-7-9.5v-5Z" />
+                <path d="M8.5 12 11 14.5 16 9" />
+              </svg>
+            </div>
+            <h3 class="text-lg lg:text-2xl font-bold mb-2 lg:mb-3">Ceramic Coating</h3>
+            <p class="text-sm lg:text-base text-muted leading-relaxed mb-4 lg:mb-6">Multi-year hydrophobic protection with showroom gloss.</p>
+            <p class="text-sm lg:text-base text-accent font-semibold">from 2400 zł</p>
+          </article>
+
+          <article class="card">
+            <div class="w-10 h-10 lg:w-12 lg:h-12 rounded-[10px] bg-accent/15 flex items-center justify-center mb-4 lg:mb-6" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" class="w-5 h-5 lg:w-6 lg:h-6 text-accent" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3.5" width="8" height="5" rx="1.5" />
+                <circle cx="16.5" cy="6" r="2.5" />
+                <path d="M7 8.5v6l-2 6h4l1.5-4.5" />
+              </svg>
+            </div>
+            <h3 class="text-lg lg:text-2xl font-bold mb-2 lg:mb-3">Paint Correction</h3>
+            <p class="text-sm lg:text-base text-muted leading-relaxed mb-4 lg:mb-6">Multi-stage swirl, scratch and oxidation removal.</p>
+            <p class="text-sm lg:text-base text-accent font-semibold">from 999 zł</p>
+          </article>
+
+          <article class="card">
+            <div class="w-10 h-10 lg:w-12 lg:h-12 rounded-[10px] bg-accent/15 flex items-center justify-center mb-4 lg:mb-6" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" class="w-5 h-5 lg:w-6 lg:h-6 text-accent" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2 20.2 6.5V17.5L12 22 3.8 17.5V6.5Z" />
+                <circle cx="12" cy="12" r="3.2" />
+              </svg>
+            </div>
+            <h3 class="text-lg lg:text-2xl font-bold mb-2 lg:mb-3">Engine Bay Cleaning</h3>
+            <p class="text-sm lg:text-base text-muted leading-relaxed mb-4 lg:mb-6">Degrease, dress and detail the engine bay safely.</p>
+            <p class="text-sm lg:text-base text-accent font-semibold">from 249 zł</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALLERY ========== -->
+    <section id="gallery" class="py-16 lg:px-16 lg:py-24 scroll-mt-20">
+      <div class="mx-auto max-w-7xl">
+        <h2 class="text-3xl lg:text-5xl font-extrabold mb-8 lg:mb-12 px-6 lg:px-0">Recent Work</h2>
+
+        <div class="flex lg:grid lg:grid-cols-3 gap-4 lg:gap-8 overflow-x-auto snap-x snap-mandatory px-6 lg:px-0 pb-2 lg:pb-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+
+          <figure class="shrink-0 w-[260px] lg:w-auto snap-start border border-line rounded-2xl overflow-hidden">
+            <div class="flex h-[140px] lg:h-[220px]">
+              <img src="/images/gallery-1-before.webp" alt="Before: SUV covered in wash foam during pre-wash decontamination" class="w-1/2 h-full object-cover" width="450" height="220" loading="lazy" />
+              <img src="/images/gallery-1-after.webp" alt="After: clean, glossy black Mercedes-Benz with a deep reflective finish" class="w-1/2 h-full object-cover" width="450" height="220" loading="lazy" />
+            </div>
+            <figcaption class="sr-only">Before and after: exterior wash and gloss finish</figcaption>
+          </figure>
+
+          <figure class="shrink-0 w-[260px] lg:w-auto snap-start border border-line rounded-2xl overflow-hidden">
+            <div class="flex h-[140px] lg:h-[220px]">
+              <img src="/images/gallery-2-before.webp" alt="Before: car paintwork looking dull and flat under grayscale lighting" class="w-1/2 h-full object-cover" width="450" height="220" loading="lazy" />
+              <img src="/images/gallery-2-after.webp" alt="After: red sports car with vibrant, corrected paintwork" class="w-1/2 h-full object-cover" width="450" height="220" loading="lazy" />
+            </div>
+            <figcaption class="sr-only">Before and after: paint correction</figcaption>
+          </figure>
+
+          <figure class="shrink-0 w-[260px] lg:w-auto snap-start border border-line rounded-2xl overflow-hidden">
+            <div class="flex h-[140px] lg:h-[220px]">
+              <img src="/images/gallery-3-before.webp" alt="Before: black car parked with a flat, unprotected finish" class="w-1/2 h-full object-cover" width="450" height="220" loading="lazy" />
+              <img src="/images/gallery-3-after.webp" alt="After: silver vehicle at night showing a sharp, reflective ceramic-coated finish" class="w-1/2 h-full object-cover" width="450" height="220" loading="lazy" />
+            </div>
+            <figcaption class="sr-only">Before and after: ceramic coating</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRICING ========== -->
+    <section id="pricing" class="px-6 py-16 lg:px-16 lg:py-24 scroll-mt-20">
+      <div class="mx-auto max-w-7xl">
+        <h2 class="text-3xl lg:text-5xl font-extrabold mb-2 lg:mb-3 lg:text-center">Packages</h2>
+        <p class="text-base lg:text-lg text-muted mb-8 lg:mb-12 lg:text-center">Choose the level of protection your car deserves.</p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 lg:max-w-5xl lg:mx-auto lg:items-center">
+
+          <div class="card">
+            <h3 class="text-lg font-bold mb-2">Basic</h3>
+            <p class="text-3xl font-extrabold mb-4">349 zł</p>
+            <ul class="flex flex-col gap-2 text-sm text-muted mb-6">
+              <li>✓ Exterior hand wash</li>
+              <li>✓ Wheel &amp; tire clean</li>
+              <li>✓ Interior vacuum</li>
+            </ul>
+            <a href="#contact" class="btn-outline-accent w-full">Choose Plan</a>
+          </div>
+
+          <div class="card relative border-2 border-accent lg:p-10 lg:scale-[1.06] lg:shadow-2xl lg:shadow-accent/30">
+            <span class="absolute -top-3.5 left-6 lg:left-10 inline-flex items-center h-fit bg-accent text-paper rounded-full px-3 py-1 text-sm font-semibold">Most Popular</span>
+            <h3 class="text-lg font-bold mb-2 mt-2">Premium</h3>
+            <p class="text-3xl font-extrabold mb-4">749 zł</p>
+            <ul class="flex flex-col gap-2 text-sm text-muted mb-6">
+              <li>✓ Everything in Basic</li>
+              <li>✓ Clay bar &amp; polish</li>
+              <li>✓ Interior deep clean</li>
+              <li>✓ Ceramic spray sealant</li>
+            </ul>
+            <a href="#contact" class="btn-primary w-full">Choose Plan</a>
+          </div>
+
+          <div class="card">
+            <h3 class="text-lg font-bold mb-2">Ultimate</h3>
+            <p class="text-3xl font-extrabold mb-4">1290 zł</p>
+            <ul class="flex flex-col gap-2 text-sm text-muted mb-6">
+              <li>✓ Everything in Premium</li>
+              <li>✓ Full paint correction</li>
+              <li>✓ 2-yr ceramic coating</li>
+            </ul>
+            <a href="#contact" class="btn-outline-accent w-full">Choose Plan</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section id="testimonials" class="px-6 py-16 lg:px-16 lg:py-24 scroll-mt-20">
+      <div class="mx-auto max-w-7xl">
+        <h2 class="text-3xl lg:text-5xl font-extrabold mb-8 lg:mb-12">What Customers Say</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+
+          <article class="card">
+            <div class="text-accent text-base lg:text-lg mb-3 lg:mb-4" aria-hidden="true">★★★★★</div>
+            <blockquote class="text-base lg:text-lg leading-relaxed mb-4 lg:mb-5">
+              <p>“Car looked better than the day I bought it. The ceramic coating beads water perfectly.”</p>
+            </blockquote>
+            <footer class="text-sm text-muted">— Maria D., Model 3 owner</footer>
+          </article>
+
+          <article class="card">
+            <div class="text-accent text-base lg:text-lg mb-3 lg:mb-4" aria-hidden="true">★★★★★</div>
+            <blockquote class="text-base lg:text-lg leading-relaxed mb-4 lg:mb-5">
+              <p>“Showed up on time, worked in my driveway, and the paint correction removed years of swirls.”</p>
+            </blockquote>
+            <footer class="text-sm text-muted">— James K., F-150 owner</footer>
+          </article>
+
+          <article class="card">
+            <div class="text-accent text-base lg:text-lg mb-3 lg:mb-4" aria-hidden="true">★★★★★</div>
+            <blockquote class="text-base lg:text-lg leading-relaxed mb-4 lg:mb-5">
+              <p>“Ceramic coating held up through a full winter. Snow just slides off.”</p>
+            </blockquote>
+            <footer class="text-sm text-muted">— Priya S., Model Y owner</footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="px-6 py-16 lg:px-16 lg:py-24 scroll-mt-20">
+      <div class="mx-auto max-w-7xl flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-24">
+        <div class="lg:flex-[0_1_520px]">
+          <h2 class="text-3xl lg:text-5xl font-extrabold mb-4 lg:mb-6 leading-tight">Detail-obsessed, since day one</h2>
+          <p class="text-sm lg:text-lg text-muted leading-relaxed">
+            Founded by two career detailers who got tired of rushed, assembly-line car washes.
+            We bring dealership-grade equipment to your driveway and treat every car like our own.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 lg:flex-1 lg:gap-8">
+          <div>
+            <div class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-accent/15 border border-accent flex items-center justify-center mb-3 lg:mb-4" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" class="w-5 h-5 lg:w-6 lg:h-6 text-accent" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 19 5.5v5c0 4.5-3 8-7 9.5-4-1.5-7-5-7-9.5v-5Z" /></svg>
+            </div>
+            <p class="text-lg lg:text-2xl font-bold">500+</p>
+            <p class="text-sm lg:text-base text-muted">Cars Detailed</p>
+          </div>
+          <div>
+            <div class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-accent/15 border border-accent flex items-center justify-center mb-3 lg:mb-4" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" class="w-5 h-5 lg:w-6 lg:h-6 text-accent" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 14 9 21 11 14 13 12 21 10 13 3 11 10 9Z" /></svg>
+            </div>
+            <p class="text-lg lg:text-2xl font-bold">5.0</p>
+            <p class="text-sm lg:text-base text-muted">Star Rated</p>
+          </div>
+          <div>
+            <div class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-accent/15 border border-accent flex items-center justify-center mb-3 lg:mb-4" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" class="w-5 h-5 lg:w-6 lg:h-6 text-accent" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 19 5.5v5c0 4.5-3 8-7 9.5-4-1.5-7-5-7-9.5v-5Z" /><path d="M8.5 12 11 14.5 16 9" /></svg>
+            </div>
+            <p class="text-lg lg:text-2xl font-bold">Insured</p>
+            <p class="text-sm lg:text-base text-muted">Fully Insured</p>
+          </div>
+          <div>
+            <div class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-accent/15 border border-accent flex items-center justify-center mb-3 lg:mb-4" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" class="w-5 h-5 lg:w-6 lg:h-6 text-accent" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5c-3.3 4.2-6.5 8.9-6.5 12.3a6.5 6.5 0 0 0 13 0c0-3.4-3.2-8.1-6.5-12.3Z" /></svg>
+            </div>
+            <p class="text-lg lg:text-2xl font-bold">Eco</p>
+            <p class="text-sm lg:text-base text-muted">Eco-Friendly Products</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="px-6 py-16 lg:px-16 lg:py-24 scroll-mt-20">
+      <div class="mx-auto max-w-7xl flex flex-col lg:flex-row gap-10 lg:gap-24">
+
+        <div class="lg:flex-[0_1_480px]">
+          <h2 class="text-3xl lg:text-5xl font-extrabold mb-6">Get In Touch</h2>
+          <address class="not-italic text-sm lg:text-base text-muted leading-loose lg:leading-[2] mb-6">
+            ul. Długa 12, Gdańsk, Poland<br />
+            <a href="tel:+48581234567" class="hover:text-paper transition-colors">+48 58 123 45 67</a><br />
+            <a href="mailto:hello@detailingstudio.pl" class="hover:text-paper transition-colors">hello@detailingstudio.pl</a><br />
+            Mon–Sat, 8am–6pm
+          </address>
+          <div class="h-[100px] lg:h-[220px] rounded-2xl bg-surface border border-line flex items-center justify-center text-dim text-xs lg:text-sm font-mono" role="img" aria-label="Map showing our location in Gdańsk, Poland">
+            map embed placeholder
+          </div>
+        </div>
+
+        <div class="flex-1 lg:bg-surface lg:border lg:border-line lg:rounded-2xl lg:p-12">
+          <form data-contact-form novalidate class="flex flex-col gap-4">
+
+            <div data-form-success class="hidden items-start gap-3 bg-success/10 border border-success rounded-lg p-4" role="status">
+              <span class="w-5 h-5 rounded-full bg-success text-ink text-xs font-bold flex items-center justify-center shrink-0" aria-hidden="true">✓</span>
+              <div>
+                <p class="text-base font-semibold">Message sent</p>
+                <p class="text-sm text-muted">We'll get back to you within one business day.</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+              <div>
+                <label for="name" class="field-label">Name</label>
+                <input type="text" id="name" name="name" class="field-input" autocomplete="name" />
+                <p data-error-for="name" class="field-error"><span class="w-3.5 h-3.5 rounded-full bg-danger text-white text-[10px] font-bold flex items-center justify-center shrink-0" aria-hidden="true">!</span><span data-error-message></span></p>
+              </div>
+              <div>
+                <label for="email" class="field-label">Email</label>
+                <input type="email" id="email" name="email" class="field-input" autocomplete="email" />
+                <p data-error-for="email" class="field-error"><span class="w-3.5 h-3.5 rounded-full bg-danger text-white text-[10px] font-bold flex items-center justify-center shrink-0" aria-hidden="true">!</span><span data-error-message></span></p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+              <div>
+                <label for="phone" class="field-label">Phone</label>
+                <input type="tel" id="phone" name="phone" class="field-input" autocomplete="tel" />
+                <p data-error-for="phone" class="field-error"><span class="w-3.5 h-3.5 rounded-full bg-danger text-white text-[10px] font-bold flex items-center justify-center shrink-0" aria-hidden="true">!</span><span data-error-message></span></p>
+              </div>
+              <div>
+                <label for="service" class="field-label">Service</label>
+                <select id="service" name="service" class="field-input">
+                  <option value="" selected>Select a service</option>
+                  <option value="exterior">Exterior Detailing</option>
+                  <option value="interior">Interior Detailing</option>
+                  <option value="ceramic">Ceramic Coating</option>
+                  <option value="paint-correction">Paint Correction</option>
+                  <option value="engine-bay">Engine Bay Cleaning</option>
+                </select>
+                <p data-error-for="service" class="field-error"><span class="w-3.5 h-3.5 rounded-full bg-danger text-white text-[10px] font-bold flex items-center justify-center shrink-0" aria-hidden="true">!</span><span data-error-message></span></p>
+              </div>
+            </div>
+
+            <div>
+              <label for="message" class="field-label">Message</label>
+              <textarea id="message" name="message" rows="4" class="field-input h-24 lg:h-32 py-3 resize-none"></textarea>
+              <p data-error-for="message" class="field-error"><span class="w-3.5 h-3.5 rounded-full bg-danger text-white text-[10px] font-bold flex items-center justify-center shrink-0" aria-hidden="true">!</span><span data-error-message></span></p>
+            </div>
+
+            <button type="submit" class="btn-primary w-full lg:w-fit lg:px-8 mt-2">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="px-6 py-12 lg:px-16 lg:py-16 border-t border-line">
+    <div class="mx-auto max-w-7xl flex flex-col items-center text-center gap-6 lg:flex-row lg:items-start lg:text-left lg:justify-between lg:gap-12">
+
+      <div class="lg:max-w-xs">
+        <p class="text-xl lg:text-2xl font-extrabold mb-3">DETAILING STUDIO<span class="text-accent">.</span></p>
+        <p class="text-sm text-muted leading-relaxed">Premium mobile detailing, ceramic coating and paint correction — we come to you.</p>
+      </div>
+
+      <nav class="flex flex-wrap justify-center gap-4 text-sm text-muted lg:flex-col lg:gap-3" aria-label="Footer">
+        <span class="font-semibold text-paper hidden lg:block">Navigate</span>
+        <a href="#home" class="hover:text-paper transition-colors">Home</a>
+        <a href="#services" class="hover:text-paper transition-colors">Services</a>
+        <a href="#gallery" class="hover:text-paper transition-colors">Gallery</a>
+        <a href="#pricing" class="hover:text-paper transition-colors">Pricing</a>
+        <a href="#testimonials" class="hover:text-paper transition-colors hidden lg:inline">Testimonials</a>
+        <a href="#contact" class="hover:text-paper transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex flex-col items-center gap-3 text-sm text-muted lg:items-start">
+        <span class="font-semibold text-paper hidden lg:block">Contact</span>
+        <a href="tel:+48581234567" class="hover:text-paper transition-colors">+48 58 123 45 67</a>
+        <a href="mailto:hello@detailingstudio.pl" class="hover:text-paper transition-colors">hello@detailingstudio.pl</a>
+        <span>ul. Długa 12, Gdańsk, Poland</span>
+      </div>
+
+      <div class="flex flex-col items-center gap-3 lg:items-start">
+        <span class="font-semibold text-paper hidden lg:block text-sm">Follow</span>
+        <div class="flex gap-3">
+          <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full border border-line flex items-center justify-center text-muted hover:text-paper hover:border-paper transition-colors">
+            <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none" /></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full border border-line flex items-center justify-center text-muted hover:text-paper hover:border-paper transition-colors font-bold text-sm">f</a>
+          <a href="#" aria-label="X (Twitter)" class="w-9 h-9 rounded-full border border-line flex items-center justify-center text-muted hover:text-paper hover:border-paper transition-colors font-bold text-sm">X</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mx-auto max-w-7xl border-t border-line mt-8 pt-6 text-xs lg:text-sm text-dim text-center lg:text-left">
+      © 2026 Detailing Studio. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
