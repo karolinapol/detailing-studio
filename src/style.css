@@ -10,7 +10,8 @@
   --color-paper: #f5f5f7;      /* primary text on dark */
   --color-muted: #9ca3af;      /* secondary text */
   --color-dim: #6b7280;        /* tertiary / eyebrow text */
-  --color-accent: #3b82f6;     /* primary accent */
+  --color-accent: #3b82f6;     /* primary accent — links, icons, borders, rings */
+  --color-accent-strong: #2563eb; /* solid fills behind white text — meets 4.5:1 AA, accent itself doesn't */
   --color-accent-light: #60a5fa; /* accent hover */
   --color-danger: #ef4444;     /* form error */
   --color-success: #22c55e;    /* form success */
@@ -36,7 +37,7 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center h-12 px-6 rounded-lg bg-accent text-paper font-semibold text-base transition-colors hover:bg-accent-light hover:text-ink;
+    @apply inline-flex items-center justify-center h-12 px-6 rounded-lg bg-accent-strong text-paper font-semibold text-base transition-colors hover:bg-accent-light hover:text-ink;
   }
 
   .btn-outline {
